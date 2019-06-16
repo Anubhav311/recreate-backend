@@ -22,7 +22,7 @@ function insert(user) {
 
 //Get multiple users in the database
 //Filterable by sending in an object literal that matches the user schema
-function getMany(filter = {}) {
+function getMultiple(filter = {}) {
     return db('users')
         .where(filter);
 }
