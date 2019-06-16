@@ -1,7 +1,7 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('react_course').truncate()
+  return knex('react_course').del()
     .then(function () {
       // Inserts seed entries
       return knex('react_course').insert([
